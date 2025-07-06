@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammad Kashif - Frontend Developer & Software Engineer Portfolio">
+  <title>Muhammad Kashif | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+      opacity: 0;
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease, card color red;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+    .hero-img {
+      animation: fadeInUp 2s ease-out;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <header class="bg-gray-900 fixed top-0 left-0 w-full z-70 shadow-md">
+  <div class="max-w-6xl mx-auto px-6 py-2 flex items-center justify-between">
+    <!-- Logo and Title -->
+    <div class="flex items-center gap-x-4">
+      <img src="C:\Users\Naeem Sahil\OneDrive\Desktop\Kashif Portfolio\images1\download.jpeg" class="w-16 h-16 rounded-full shadow-lg border-4 border-black" />
+      <h1 class="text-2xl text-red-400 font-bold">Portfolio</h1>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex gap-x-6">
+      <a href="#home" class="text-green-400 hover:text-white transition duration-300 font-medium">Home</a>
+      <a href="#skills" class="text-green-400 hover:text-white transition duration-300 font-medium">Skills</a>
+      <a href="#Tools" class="text-green-400 hover:text-white transition duration-300 font-medium">Tools</a>
+      <a href="#projects" class="text-green-400 hover:text-white transition duration-300 font-medium">Projects</a>
+      <a href="#contact" class="text-green-400 hover:text-white transition duration-300 font-medium">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-800 text-white pt-20 px-6">
+    <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+      <div class="text-center md:text-left">
+        <h1 class="text-5xl font-bold mb-4 text-red-400">Muhammad Kashif</h1>
+        <p class="text-xl mb-6 text-green-400">Frontend Developer | React Native | MySQL | Power BI</p>
+       <p class="max-w-3xl mx-auto text-lg text-justify">
+          An aspiring Data Analyst and Software Engineer with hands-on experience in MySQL for data handling and Power BI for insightful reporting and visualization. Pursuing a BS in Software Engineering with additional skills in React Native and Java, I bridge the gap between data analysis and frontend development to deliver actionable insights through user-friendly interfaces.
+        </p>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <!-- <img src="D:\Kashif Documents\sigma web development full course\Kashif Documents\Postgre SQL Query\Kashif Portfolio\kashif.jpeg" alt="Muhammad Kashif" class="hero-img w-60 h-60 object-cover rounded-full shadow-lg border-4 border border-red-1500"> -->
+      <img src="images1/kashi.jpg" alt="Muhammad Kashif" class="hero-img w-60 h-60 object-cover rounded-full shadow-lg border-4 border-green-500" />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6">
+    <div class="mb-12 text-center">
+      <h2 class="text-4xl font-extrabold text-white tracking-tight">Technical Skills</h2>
+      <div class="mt-3 w-20 h-1 mx-auto bg-blue-500 rounded"></div>
+    </div>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-blue-400">React Native <span class="text-sm text-gray-300">(60%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used to build mobile apps with smooth UI (User Interface), leveraging the component-based architecture and JS frameworks.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-green-400">HTML/CSS <span class="text-sm text-gray-300">(65%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Core skills for structuring and styling responsive websites and interfaces.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-yellow-400">Java <span class="text-sm text-gray-300">(60%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used in object oriented is most application development and logic building for academic projects.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-red-400">C++ <span class="text-sm text-gray-300">(75%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Applied for algorithmic problem solving and understanding OOP concepts.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-indigo-400">MySQL <span class="text-sm text-gray-300">(80%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used in backend systems for structured data storage and also use in data analysis, relationships, and complex queries.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-pink-400">Power BI <span class="text-sm text-gray-300">(80%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Designed dynamic dashboards and visual reports for data analysis and business insights.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-teal-400">TensorFlow Lite <span class="text-sm text-gray-300">(65%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Integrated for mobile-based AI tasks like image recognition in the HerbLens app.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-orange-400">OpenCV <span class="text-sm text-gray-300">(65%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used for image processing and computer vision in Android and cross-platform AI apps.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-blue-400">Pandas <span class="text-sm text-gray-300">(60%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used for the data cleaning, transformation, and analysis in Python handling tasks like missing values, data filtering, aggregation, and merging datasets to prepare for reporting or machine learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section id="Tools" class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6">
+    <div class="mb-12 text-center">
+      <h2 class="text-4xl font-extrabold text-white tracking-tight">Tools</h2>
+      <div class="mt-3 w-20 h-1 mx-auto bg-blue-500 rounded"></div>
+    </div>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-blue-400">Dev C++ <span class="text-sm text-gray-300">(80%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used for writing, compiling, and debugging C++ programs during academic and project-based development.
+
+</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-green-400">Eclipse <span class="text-sm text-gray-300">(75%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used for Java development, including coding, debugging, and project management in academic and software engineering projects.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-yellow-400">Star UML <span class="text-sm text-gray-300">(80%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used for designing UML diagrams of the projects such as use case, class, sequence, and activity diagrams to model system architecture and workflows.
+
+</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-red-400">Figma <span class="text-sm text-gray-300">(65%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used for UI/UX design and prototyping, creating responsive layouts, wireframes, and interactive mockups for web and mobile applications.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-blue-400">Canva <span class="text-sm text-gray-300">(80%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used for designing presentations, social media posts, posters, and other visual content with a focus on clean, professional layouts.</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-green-400">Power BI <span class="text-sm text-gray-300">(85%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used for data visualization, dashboard creation, and reporting, transforming raw data into actionable insights using DAX, Power Query, and interactive charts.
+
+</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-yellow-400">Kaggle <span class="text-sm text-gray-300">(80%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used for practicing data analysis, machine learning, and model evaluation on real-world datasets; participated in competitions and shared notebooks.
+
+</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card text-left">
+        <h3 class="text-xl font-semibold text-red-400">Vs code <span class="text-sm text-gray-300">(75%)</span></h3>
+        <p class="mt-2 text-sm text-gray-300 text-justify">Used as a primary code editor for developing web and software applications with support for multiple languages, extensions, and debugging tools.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-24 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white text-center">
+    <div class="mb-12">
+      <p class="uppercase text-sm tracking-widest text-gray-400 mb-2">My Work</p>
+      <h2 class="text-4xl font-extrabold text-white tracking-tight">Featured Projects</h2>
+      <div class="mt-3 w-20 h-1 mx-auto bg-blue-500 rounded"></div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card transition">
+        <h3 class="text-2xl font-semibold mb-2 text-blue-400">HerbLens App</h3>
+        <p class="text-gray-300 mb-4 text-justify">AI-based mobile application for identifying herbs using image recognition. Built with React Native, TensorFlow Lite, and OpenCV.</p>
+        <a href="https://github.com/kashifmalikSE/SQL-Project" target="_blank" class="text-red-400 font-semibold hover:underline">View on GitHub</a>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card transition">
+        <h3 class="text-2xl font-semibold mb-2 text-green-400">Online Book Store</h3>
+        <p class="text-gray-300 mb-4 text-justify">Designed a full-stack database system using MySQL to manage customer records, bookings, and Orders.</p>
+        <a href="https://github.com/kashifmalikSE/SQL-Project" target="_blank" class="text-red-400 font-semibold hover:underline">View on GitHub</a>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card transition">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-300">Mobile Sales Dashboard</h3>
+        <p class="text-gray-300 mb-4 text-justify">Designed and implemented a Mobile Sales Dashboard using Power BI, enabling real-time sales tracking, KPI visualization, and interactive reporting.</p>
+        <a href="https://github.com/kashifmalikSE/SQL-Project" target="_blank" class="text-red-400 font-semibold hover:underline">View on GitHub</a>
+      </div>
+      
+      
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card transition">
+        <h3 class="text-2xl font-semibold mb-2 text-blue-400">Hotel Managemant System</h3>
+        <p class="text-gray-300 mb-4 text-justify">Developed a hotel management system database using SQL queries to manage room bookings, customer records, and billing operations.</p>
+        <a href="https://github.com/kashifmalikSE/SQL-Project" target="_blank" class="text-red-400 font-semibold hover:underline">View on GitHub</a>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-lg shadow-lg card transition">
+        <h3 class="text-2xl font-semibold mb-2 text-green-400">Simple Calculator</h3>
+        <p class="text-gray-300 mb-4 text-justify">Created a desktop GUI-based calculator in Java using WindowBuilder to perform basic arithmetic operations.</p>
+        <a href="https://github.com/kashifmalikSE/SQL-Project" target="_blank" class="text-red-400 font-semibold hover:underline">View on GitHub</a>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg card transition">
+        <h3 class="text-2xl font-semibold mb-2 text-yellow-300">Word Compressor</h3>
+        <p class="text-gray-300 mb-4 text-justify">Implemented Huffman coding for word compression.</p>
+        <a href="https://github.com/kashifmalikSE/SQL-Project" target="_blank" class="text-red-400 font-semibold hover:underline">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Contact with me</h2>
+    <p class="mb-6 text-gray-300">I'm open to freelance, part-time, or full-time opportunities. Feel free to reach out!</p>
+    <p>Email: <a href="mailto:km8305604@gmail.com" class="text-blue-400 font-semibold hover:underline">km8305604@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/muhammad-kashif-33488a270" class="text-blue-400 font-semibold hover:underline">muhammad-kashif</a></p>
+    <p>Phone: <a href="tel:+923055560339" class="text-blue-400 font-semibold hover:underline">0305 5560339</a></p>
+  </section>
+
+  <footer class="py-6 text-center bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-sm text-gray-400">
+    &copy; 2025 Muhammad Kashif. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
